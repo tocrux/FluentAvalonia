@@ -11,4 +11,13 @@ internal static class OSVersionHelper
     /// </summary>
     public static bool IsWindows11() =>
         OperatingSystem.IsWindowsVersionAtLeast(10, 0, 22000);
+    
+    public static bool IsWindows10_1607() =>
+        OperatingSystem.IsWindowsVersionAtLeast(10, 0, 14393);
+    
+    public static bool IsWindows10_1809() =>
+        OperatingSystem.IsWindowsVersionAtLeast(10, 0, 17763);
+    
+    public static bool IsWindows10_1903() =>
+        OperatingSystem.IsWindowsVersionAtLeast(10, 0, 18362);
 }
